@@ -35,9 +35,28 @@ Anything above python 3.10 should be ok.
 Here, we are talking command line options. There is also the Anaconda GUI, but that is not covered here. For command line, there are two main options:
 
 1. A `conda`-based installation and
-1. `pip` (Python Package Installer).
+1. `pip` (Python Package Installer). This is what we will use.
 
-Both are good choices but there are some differences. Conda installation gives immediately a very large number of packages. `pip` usually gets new packages faster and all packages must be separately installed. This also means that Jupyter must be installed separately. 
+Both are good choices but there are some differences. Conda installation gives immediately a very large number of packages. `pip` usually gets new packages faster and all packages must be separately installed. This also means that Jupytheer must be installed separately. 
+
+##### 1.2.1 Check that you have `pip`
+
+To check if you have `pip`, run the command
+
+```
+python3 -m pip --version
+```
+If it doesn't show anything, then you don't have `pip` installed. Try
+```
+python3 -m pip3 --version
+```
+
+
+If you don't have it, the command below is how it can be installed. The below assumes that you have superuser rights to your computer:
+```
+sudo apt install python3-pip
+```
+Now, let's move on.
 
 ### 1.3 IMPORTANT: Create a virtual environment
 
@@ -48,16 +67,30 @@ Why use a virtual envirnmnet? There is a vast number of python packages both dis
 
 #### 1.3.1 Using `pip`
 
-
-
+Check if you have virtual environment installed:
 ```
 virtualenv --version
 ```
-
-First, install the package `virtualenv` using
+If not, then, depending on the version of python, the following may work:
+Install the package `virtualenv` using
 ```
 python3 -m pip install --user virtualenv
 ```
+If that gives an error something like this
+```
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try apt install
+    python3-xyz, where xyz is the package you are trying to
+    install.
+```
+Then try the following (as per the instructions above -> you need to know the version of python you have). In my case, I had this come with a new installation, and my python version is 3.12.3. With that, I did
+```
+sudo apt install python3.12-venv
+```
+and voilà!
+
 Create the environment, replace `my_new_env` by whatever you like your environment to be called
 ```
 python3 -m venv my_new_env
@@ -109,16 +142,16 @@ conda env remove -n  my_new_environment
 ## 1.4 Activate your virtual environment
 
 
-### 1.4.x Install the necessary packages and dependencies
+### 1.4.1 Install the necessary packages and dependencies
 
 Activate your virtual environment. Then, install
 
 ```
 pip install jupyterlab
 ```
-
+The following also installs `seaborn` for pretty plots, `scikit-learn` that is used in ML, `numpy`, a compatible version of `matplotlib` and many other dependecies:
 ```
-pip install --upgrade MDAnalysis
+pip install --upgrade MDAnalysis[analysis]
 ```
 
 Install also the test cases for `MDAnalysis`
@@ -136,16 +169,16 @@ There is also an option to run in parallel. Replace the number after `--numproce
 pip install pytest-xdist
 pytest --disable-pytest-warnings --pyargs MDAnalysisTests --numprocesses 4
 ```
-Get `seaborn` for pretty plots and `ipywidgets` for widgets and such
+Get `ipywidgets` for widgets and such
 ```
-pip install seaborn ipywidgets
+pip install ipywidgets
 ```
-Get `scikit` packages
+Get the `scikit-image` package
 ```
-pip install scikit-learn scikit-image
+pip install scikit-image
 ```
 
-### 1.4.1 Check if you have a given package
+### 1.4.2 Check if you have a given package
 
 Using `pip`, this is how you can check if you have a given package installed
 
@@ -166,11 +199,9 @@ With the above, we can download the notebooks, codes, and data for the exercises
 
 - `data`: the data files for analysis
 - `notebooks`: Jupyter notebooks for the exercises
-- `src`: python source file
+- `src`: pythin source file
 - `pics: pictures used for demonstrations in the notebooks
 
 # 2. Start Jupyter lab
 
 Move to the notebook directory and your're ready to start.
-
-
