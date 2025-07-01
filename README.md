@@ -39,7 +39,7 @@ Here, we are talking command line options. There is also the Anaconda GUI, but t
 
 Both are good choices but there are some differences. Conda installation gives immediately a very large number of packages. `pip` usually gets new packages faster and all packages must be separately installed. This also means that Jupytheer must be installed separately. 
 
-##### 1.2.1 Check that you have `pip`
+##### 1.2.1 Check if you have `pip`
 
 To check if you have `pip`, run the command
 
@@ -51,18 +51,18 @@ If it doesn't show anything, then you don't have `pip` installed. Try
 python3 -m pip3 --version
 ```
 
-
 If you don't have it, the command below is how it can be installed. The below assumes that you have superuser rights to your computer:
 ```
 sudo apt install python3-pip
 ```
-Now, let's move on.
+Now, check that it is there, and let's move on.
 
 ### 1.3 IMPORTANT: Create a virtual environment
 
-If you already have python virtual environment installed and are familiar with them, create a virtual environment and skip to XX. If you are unfamiliar with virtual environments, read on and install. 
+Independent if you use `pip` or `conda`,  it is *very* important to use a virtual environment.
+If you already have python virtual environment installed and are familiar with them, create a virtual environment for this exercise, activate it, and skip to Section 1.5. If you are unfamiliar with virtual environments, read on and install. 
 
-Why use a virtual envirnmnet? There is a vast number of python packages both distributed with the basic installation, and contributed by the users and various projects. When packages are updated or/and changed, compatibility may (and often does) break.  The solution to this is the so-called virtual environment. Virtual environment provides a sandbox - an isolated environment - for a given project. This allows the project to have its own dependencies without interfering with other projects and the main installation. Using virtual environments is highly recommended. Using them eliminates lots of potential errors and problems with package updates.
+**Why use a virtual environment?** There is a vast number of python packages both distributed with the basic installation, and contributed by the users and various projects. When packages are updated or/and changed, compatibility may (and often does) break.  The solution to this is the so-called *virtual environment*. Virtual environment provides a sandbox - an isolated environment - for a given project. This allows the project to have its own dependencies *without interfering* with other projects and, importantly, the main installation. Using virtual environments is highly recommended, and not doing it may lead to wrecking your current python installation and the package dependencies. Using a virtual environment eliminates lots of potential errors and problems with package updates.
 
 
 #### 1.3.1 Using `pip`
@@ -149,7 +149,7 @@ Activate your virtual environment. Then, install
 ```
 pip install jupyterlab
 ```
-The following also installs `seaborn` for pretty plots, `scikit-learn` that is used in ML, `numpy`, a compatible version of `matplotlib` and many other dependecies:
+The following also installs `seaborn` for pretty plots, `scikit-learn` that is used in ML in the notebooks, `numpy`, a compatible version of `matplotlib` and many other dependecies:
 ```
 pip install --upgrade MDAnalysis[analysis]
 ```
@@ -195,13 +195,15 @@ With the above, we can download the notebooks, codes, and data for the exercises
 **Make sure you have activated your virtual environment!**
 
 ## Files and directrories
-
+Once the download is available, the main directory 
 
 - `data`: the data files for analysis
 - `notebooks`: Jupyter notebooks for the exercises
 - `src`: pythin source file
-- `pics: pictures used for demonstrations in the notebooks
+- `pics`: pictures used for demonstrations in the notebooks
 
 # 2. Start Jupyter lab
 
 Move to the notebook directory and your're ready to start.
+
+
