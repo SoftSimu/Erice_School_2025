@@ -188,9 +188,12 @@ pip show package_name
 
 ## 1.5 Clone this repository
 
-With the above, we can download the notebooks, codes, and data for the exercises. Use your preferred method under the tab `code`.
+With the above, we can download the notebooks, codes, and data for the exercises. Use your preferred method under the tab `code`. 
 
-**NOTE:** The GitHub site will be available when the Summer School starts.
+**Note 1:** If you haven't cloned GitHub repositories before, you may need to install `gh`
+- [Installing the `gh` client](https://github.com/cli/cli#installation). This link has instructions for all major operating systems.
+
+**NOTE 2:** The GitHub site will be available when the Summer School starts.
 
 **Make sure you have activated your virtual environment!**
 
