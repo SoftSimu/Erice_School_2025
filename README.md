@@ -213,4 +213,13 @@ Once the download is available, the main directory
 
 Move to the notebook directory and your're ready to start.
 
+## 2.1 How to proceed
+
+Use the files in this order (directory `notebooks`):
+
+1. `notebook_intro.ipynb`
+2. `notebook_fcc.ipynb`
+3. `notebook_spc_water.ipynb`
+4. `notebook_g3_pca.ipynb`
+
 
