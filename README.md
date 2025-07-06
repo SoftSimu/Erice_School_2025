@@ -1,6 +1,6 @@
 # Material for the Erice Summer School 
 
-THIS SITE: [https://github.com/SoftSimu/Erice_School_2025](https://github.com/SoftSimu/Erice_School_2025)
+CLONE THIS SITE: [https://github.com/SoftSimu/Erice_School_2025](https://github.com/SoftSimu/Erice_School_2025)
 
 <hr>
 
