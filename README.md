@@ -197,17 +197,17 @@ With the above, we can download the notebooks, codes, and data for the exercises
 **Note 1:** If you haven't cloned GitHub repositories before, you may need to install `gh`
 - [Installing the `gh` client](https://github.com/cli/cli#installation). This link has instructions for all major operating systems.
 
-**NOTE 2:** The GitHub site will be available when the Summer School starts.
+**NOTE 2:** You can also just simply download the zip file
 
 **Make sure you have activated your virtual environment!**
 
 ## Files and directrories
 Once the download is available, the main directory 
 
-- `data`: the data files for analysis
 - `notebooks`: Jupyter notebooks for the exercises
-- `src`: pythin source file
-- `pics`: pictures used for demonstrations in the notebooks
+- `notebooks/data`: the data files for analysis
+- `notebooks/src`: pythin source file
+- `notebooks/pics`: pictures used for demonstrations in the notebooks
 
 # 2. Start Jupyter lab
 
