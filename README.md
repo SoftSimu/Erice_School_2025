@@ -8,7 +8,7 @@
 
 - Sunday, July 6, 2025, Erice, Sicily, Italy.
   - Lecture: 8:45-9:55
-  - Hands-on session: 14:45-15:45 (16:05)
+  - Hands-on session: 14:45-15:45
 - Material by [Mikko Karttunen](https://www.softsimu.net/mikko/) and [Matt Davies](https://www.researchgate.net/profile/Matthew-Davies-48). If using the codes here, please cite the two articles below:
   - The $g_3$ three-point correlation function was originally introduced in: Sukhomlinov, S. V.; Müser, M. H. A Mixed Radial, Angular, Three-Body Distribution Function as a Tool for Local Structure Characterization: Application to Single-Component Structures. [J. Chem. Phys. 2020, 152, 194502](https://doi.org/10.1063/5.0007964).
   - It was further worked on, and integrated to an ML workflow in:  Davies, M.; Reyes-Figueroa, A. D.; Gurtovenko, A. A.; Frankel, D.; Karttunen, M. Elucidating Lipid Conformations in the Ripple Phase: Machine Learning Reveals Four Lipid Populations. [Biophys. J. 2023, 122, 442–450](https://doi.org/10.1016/j.bpj.2022.11.024).
@@ -91,13 +91,17 @@ sudo apt install python3.12-venv
 ```
 and voilà!
 
-Create the environment, replace `my_new_env` by whatever you like your environment to be called
+Create the environment, the syntax is 
 ```
 python3 -m venv my_new_env
 ```
-Activate the virtual environment:
+replace `my_new_env` by whatever you like your environment to be called. Here, let's call the environment `g3_erice`. If you want to use that, just create the environment:
 ```
-source my_new_env/bin/activate
+python3 -m venv g3_erice
+```
+and activate it:
+```
+source g3_erice/bin/activate
 ```
 And to deactivate
 ```
@@ -144,7 +148,7 @@ conda env remove -n  my_new_environment
 
 ### 1.4.1 Install the necessary packages and dependencies
 
-Activate your virtual environment. Then, install
+**First activate your virtual environment.** After that,  install
 
 ```
 pip install jupyterlab
@@ -159,7 +163,7 @@ Install also the test cases for `MDAnalysis`
 ```
 pip install --upgrade MDAnalysisTests
 ```
-**Optional but recommended:** Run the MDAnalysis tests (more info [here](https://userguide.mdanalysis.org/stable/installation.html#testing)). This took about 7 minutes om AMD Ryzen 9 (5800 Series) based laptop. The following uses serial operations:
+**Optional but recommended:** Run the MDAnalysis tests (more info [here](https://userguide.mdanalysis.org/stable/installation.html#testing)). This took about 7 minutes on AMD Ryzen 9 (5800 Series) based laptop running Ubuntu 24.04 LTS and aboiut 9 minutes on the same laptop using WSL. The following uses serial operations:
 
 ```
 pytest --disable-pytest-warnings --pyargs MDAnalysisTests
@@ -188,7 +192,7 @@ pip show package_name
 
 ## 1.5 Clone this repository
 
-With the above, we can download the notebooks, codes, and data for the exercises. Use your preferred method under the tab `code`. 
+With the above, we can download the notebooks, codes, and data for the exercises. Use your preferred method under the tab `code`.
 
 **Note 1:** If you haven't cloned GitHub repositories before, you may need to install `gh`
 - [Installing the `gh` client](https://github.com/cli/cli#installation). This link has instructions for all major operating systems.
