@@ -220,8 +220,13 @@ Move to the notebook directory and your're ready to start.
 Use the files in this order (directory `notebooks`):
 
 1. `notebook_intro.ipynb`
+   - A summary of the methods, no codes to execute
 2. `notebook_fcc.ipynb`
+   - Demonstration of the basic capabilities of `MDAnalysis` for reading in files, extracting information, and trajectories from them.
+   - Demonstration of the $g_3$ three-body correlation function using a simple fcc lattice 
 3. `notebook_spc_water.ipynb`
+   - Demonstration of the $g_3$ three-body correlation function using a short trajectory of SPC water.
 4. `notebook_g3_pca.ipynb`
+   - Demonstration of the $g_3$ three-body correlation as a feature for ML-based analysis
 
 
