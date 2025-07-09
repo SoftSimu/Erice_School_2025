@@ -12,8 +12,8 @@ CLONE THIS SITE: [https://github.com/SoftSimu/Erice_School_2025](https://github.
   - Lecture: 8:45-9:55
   - Hands-on session: 14:45-15:45
 - Material by [Mikko Karttunen](https://www.softsimu.net/mikko/) and [Matt Davies](https://www.researchgate.net/profile/Matthew-Davies-48). If using the codes here, please cite the two articles below:
-  - The $g_3$ three-point correlation function was originally introduced in: Sukhomlinov, S. V.; Müser, M. H. A Mixed Radial, Angular, Three-Body Distribution Function as a Tool for Local Structure Characterization: Application to Single-Component Structures. [J. Chem. Phys. 2020, 152, 194502](https://doi.org/10.1063/5.0007964).
-  - It was further worked on, and integrated to an ML workflow in:  Davies, M.; Reyes-Figueroa, A. D.; Gurtovenko, A. A.; Frankel, D.; Karttunen, M. Elucidating Lipid Conformations in the Ripple Phase: Machine Learning Reveals Four Lipid Populations. [Biophys. J. 2023, 122, 442–450](https://doi.org/10.1016/j.bpj.2022.11.024).
+  - The $g_3$ three-point correlation function was originally introduced in: Sukhomlinov, S. V.; Müser, M. H. *A Mixed Radial, Angular, Three-Body Distribution Function as a Tool for Local Structure Characterization: Application to Single-Component Structures.* [J. Chem. Phys. 2020, 152, 194502](https://doi.org/10.1063/5.0007964).
+  - It was further worked on, pythonized, and integrated into an ML workflow in:  Davies, M.; Reyes-Figueroa, A. D.; Gurtovenko, A. A.; Frankel, D.; Karttunen, M. *Elucidating Lipid Conformations in the Ripple Phase: Machine Learning Reveals Four Lipid Populations.* [Biophys. J. 2023, 122, 442–450](https://doi.org/10.1016/j.bpj.2022.11.024).
 
 - New to python? Here is a gentle introduction with links to more resources: [Brief introduction to Python](https://mejk.github.io/SciComp/class/PythonBasics/python-intro.html#plotting-in-python) 
 
